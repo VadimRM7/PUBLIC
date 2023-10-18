@@ -65,7 +65,7 @@ def attempt_stake(private_key, wallet_address, num_retries, init_stake_amount):
                 print(f"\033[1;31;40mГОТОВО! Было стейкнуто: {stake_value}\033[m")
                 return True
 
-            print(f"ПОПЫТКА СТЕЙКА #{i}")
+            print(f"ПОПЫТКА СТЕЙКА #{i + 1}")
             stake_process = run_stake_command(private_key, stake_value)
             sleep(randint(40, 90))
 
