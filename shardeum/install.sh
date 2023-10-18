@@ -1,5 +1,6 @@
 #!/bin/bash
 
+apt install expect -y
 . <(wget -qO- https://raw.githubusercontent.com/DOUBLE-TOP/tools/main/main.sh) &>/dev/null
 . <(wget -qO- https://raw.githubusercontent.com/DOUBLE-TOP/tools/main/docker.sh) &>/dev/null
 wget -qO ./update_shard.sh https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh
