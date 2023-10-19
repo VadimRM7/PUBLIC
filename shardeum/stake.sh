@@ -3,7 +3,7 @@
 read -rp "Введите ПРИВАТНЫЙ ключ: " private_key
 read -rp "Введите АДРЕС: " wallet_address
 
-tmux kill-session -t shardeum_staking
+tmux kill-session -t shardeum_staking 2>/dev/null
 tmux new-session -d -s shardeum_staking python3 -c "import os
 import sys
 from random import randint, uniform
