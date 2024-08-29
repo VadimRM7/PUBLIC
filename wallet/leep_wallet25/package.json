@@ -1,0 +1,16 @@
+{
+  "name": "leap-wallet-generator",
+  "version": "1.0.0",
+  "description": "Script to generate Cosmos wallets for import into Leap Wallet",
+  "main": "createWallet.js",
+  "scripts": {
+    "start": "node createWallet.js"
+  },
+  "dependencies": {
+    "@cosmjs/proto-signing": "^0.29.0",
+    "@cosmjs/amino": "^0.29.0",
+    "@cosmjs/stargate": "^0.29.0"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
